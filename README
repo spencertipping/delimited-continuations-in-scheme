@@ -1,1 +1,6 @@
 A quick implementation of shift/reset delimited continuations using call/cc.
+
+delimited.scm is runnable under Guile 1.8 (and probably other Schemes):
+$ guile delimited.scm
+
+Probably most informative in conjunction with reading the source.

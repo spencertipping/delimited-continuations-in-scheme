@@ -15,7 +15,7 @@
          (pop   (lambda ()  (let ((x (top))) (set! stack (cdr stack)) x)))
          ;; stack accessors
 
-         (tail  (lambda (x) ((pop) x) x))
+         (tail  (lambda (x) ((pop) x)))
          ;; eta-expansion to prevent premature evaluation of (pop)
          ;; This function's purpose is kind of subtle. Basically, since we're returning to a 'shift' block somewhere, we need to know when we hit the end of a lambda. The best way to do this
          ;; is to take the result of that lambda and send it up the call stack (by invoking the stack top on it).
