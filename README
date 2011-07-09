@@ -1,0 +1,1 @@
+A quick implementation of shift/reset delimited continuations using call/cc.
